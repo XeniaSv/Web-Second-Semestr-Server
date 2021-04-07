@@ -3,5 +3,5 @@ module.exports = function (mongoose) {
 
     const favouriteCity = new Schema({cityName: {type: "string", unique: true}}, {versionKey: false});
 
-    return mongoose.model("FavouritesCities", favouriteCity);
+    return mongoose.model("Cities", favouriteCity);
 }
