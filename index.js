@@ -34,7 +34,7 @@ mongoose.connect(urlDB, {useUnifiedTopology: true, useNewUrlParser: true, useFin
                 const lat = req.query.lat;
                 const lon = req.query.lon;
 
-                Requests.getInfoCityName(lat, lon)
+                Requests.getInfoCoordinats(lat, lon)
                         .then(data => {res.send(data);})
                         .catch(() => res.status(404).send("Неправильный запрос. Поробуйте еще раз"))
             })
