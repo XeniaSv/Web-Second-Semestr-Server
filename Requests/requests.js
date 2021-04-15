@@ -1,6 +1,6 @@
 const fetch = require("node-fetch");
 const query = "https://api.openweathermap.org/data/2.5/weather";
-const key = process.env.APPID_KEY;
+const key = require("../config").APPID;
 
 async function getInformation(suffixs) {
     const url = new URL(query);
